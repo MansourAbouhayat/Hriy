@@ -1,0 +1,55 @@
+##REST API LHRIY##
+
+#INSTALL#
+npm install OR yarn install
+
+#RUN#
+nodemon server.js
+
+:#PRODUCT-REST#:
+
+1#GetALLProducts#:
+
+GET:localhost:5001/api/v1/Product/
+
+2#GetProductsById#:
+
+GET:localhost:5001/api/v1/Product/{ID OF Product you want}
+
+3#CreateProducts#:
+
+POST:localhost:5001/api/v1/Product/
+
+:#JSON#:
+
+{ "NAME_PRODUCT":"MANO",
+"Category":"x",
+"DESCRIPTION":"woow",
+"PRIX" :200,
+"MARQUE":"mansour",
+"Quantity_Product":200 }
+
+:#HEADERS#:
+authorization:hello eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjMsImlhdCI6MTY3ODk2MDY2MH0.5eyLZqF11t1_WlPgCH_UT31yx9Stt3tLDd2q8IGgx7k
+
+3#updateProducts#:
+
+PUT:localhost:5001/api/v1/Product/{ID OF Product you to update}
+:#JSON#:
+
+{ "NAME_PRODUCT":"MANO",
+"Category":"x",
+"DESCRIPTION":"woow",
+"PRIX" :200,
+"MARQUE":"mansour",
+"Quantity_Product":200 }
+
+:#HEADERS#:
+authorization:hello eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjMsImlhdCI6MTY3ODk2MDY2MH0.5eyLZqF11t1_WlPgCH_UT31yx9Stt3tLDd2q8IGgx7k
+
+4#deleteProducts#:
+
+delete:localhost:5001/api/v1/Product/{ID OF Product you to delete}
+
+:#HEADERS#:
+authorization:hello eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjMsImlhdCI6MTY3ODk2MDY2MH0.5eyLZqF11t1_WlPgCH_UT31yx9Stt3tLDd2q8IGgx7k
